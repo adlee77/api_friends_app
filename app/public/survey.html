@@ -3,20 +3,181 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
     <title>Survey Questions</title>
 </head>
 <body>
     <div class="container">
-    <header>About You</header>
-    <div class="row">
+    <h2>Survey Questions</h2>
+
     <h3>About You</h3>
-    </div>
-    <div class="row">
+
+
         <p>Name (Required)</p>
+        <input type="text" id="name">
+        <p>Link to Photo Image (Required)</p>
+        <input type="text" id="image">
+
+    <h3>Question 1</h3>
+    <select class="chosen-select" id="q1">
+        <span>Select an Option</span>
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 2</h3>
+    <select class="chosen-select" id="q2">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 3</h3>
+    <select class="chosen-select" id="q3">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 4</h3>
+    <select class="chosen-select" id="q4">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 5</h3>
+    <select class="chosen-select" id="q5">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 6</h3>
+    <select class="chosen-select" id="q6">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 7</h3>
+    <select class="chosen-select" id="q7">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 8</h3>
+    <select class="chosen-select" id="q8">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 9</h3>
+    <select class="chosen-select" id="q9">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+
+    <br>
+
+    <h3>Question 10</h3>
+    <select class="chosen-select" id="q10">
+        <option value="1">1 (Strongly Disagree)</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5 (Strongly Agree)</option>
+      </select>
+    
+    <button id="subButton" type="submit" data-toggle="modal" data-target="#myModal">Submit</button>
+
+    <div class="row">
+        <div class="col">
+            <a href="/api/friends">API Friends List</a>
         </div>
-        <div class="row">
-            <input type="text">
-            </div>
     </div>
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+                <h1 id="person"></h1>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+    <script>
+        $('#subButton').on("click", ()=>{
+        var friend = {
+            name: $('#name').val(),
+            photo: $('#image').val(),
+            scores: [$('#q1').val(), $('#q2').val(), $('#q3').val(), $('#q4').val(), $('#q5').val(), $('#q6').val(), $('#q7').val(), $('#q8').val(), $('#q9').val(), $('#q10').val()],
+        }
+        $.ajax({
+            url: "/api/friends",
+            method: "POST",
+            data: friend
+        }) 
+        .then((data)=>{
+            console.log(data)
+            $('#myModal').show()
+            $('#person').text(data.name)
+        })
+        })
+
+    </script>
 </body>
 </html>
