@@ -1,0 +1,34 @@
+#api {
+    position: absolute;
+    bottom: 10px;
+}
+#surveyButton {
+    position: relative;
+    top: 50px;
+}
+.header {
+    background-color: #F1F1F1;
+    border-bottom: solid gray;
+    text-align: center;
+    padding: 20px;
+  }
+.container {
+    background-color: #F1F1F1;
+    height: 100%;
+}
+#image, #name {
+    position: relative;
+    bottom: 10px;
+}
+h3{
+    position: relative;
+    top: 5px;
+}
+.chosen-select{
+    position: relative;
+    bottom: 10px;
+}
+#subButton {
+    position: relative; 
+    left: 15px;
+}
