@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/adlee77/api_friends_app#readme",
   "dependencies": {
-    "express": "^4.17.1",
+    "express": "^4.17.3",
     "path": "^0.12.7"
   }
 }
